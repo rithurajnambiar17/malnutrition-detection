@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Anamoly Detection</title>
+
+    </head>
+    <body>
+        <h1>Anamoly Detection</h1>
+        <p>Upload a file to detect anamolies</p>
+        <form action="{{ url_for('result') }}" method="POST" enctype="multipart/form-data">
+            <input class="form-control" type="file" name = "rawImage"  enctype="multipart/form-data"> <br>
+            <input type="submit" value="Upload" name="submit">
+        </form>
+    </body>
+</html>
