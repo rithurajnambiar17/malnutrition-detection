@@ -23,6 +23,7 @@ def result():
         img = img.reshape(1, 150, 150, 3)
 
         model = tf.keras.models.load_model('./models/model.h5')
+        # Loading model file that was previously saved after training CNN model
         prediction = model.predict(img)
 
         if prediction[0][0] == 0:
